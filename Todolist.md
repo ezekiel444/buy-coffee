@@ -1,0 +1,1 @@
+change the cart-icon when an item is added

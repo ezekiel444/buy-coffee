@@ -1,3 +1,28 @@
-/* body{
-    background-color: green;
-} */
+:root{
+    --mainBrown:rgb(22, 22, 218);
+    --mainYellow:rgb(192, 169, 42);
+    --mainGrey:rgb(187, 187, 187);
+    --mainWhite:rgb(255, 255, 255);
+    --mainDark:#222
+}
+
+body{
+  background:var(--mainWhite);
+  color:var(--mainDark);
+font-family: Arial, Helvetica, sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6{
+font-family: 'Courier New', Courier, monospace !important;
+letter-spacing: 0.25rem !important;
+}
+
+.text-yellow{
+    color: var(--mainYellow);
+}
+
+.cart-icon{
+    cursor: pointer;
+    color: var(--mainYellow);
+    font-size: 2rem;
+}
