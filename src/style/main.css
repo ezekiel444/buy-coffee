@@ -1,5 +1,5 @@
 :root{
-    --mainBrown:rgb(22, 22, 218);
+    --mainBrown:rgba(211, 141, 12, 0.144);
     --mainYellow:rgb(192, 169, 42);
     --mainGrey:rgb(187, 187, 187);
     --mainWhite:rgb(255, 255, 255);
@@ -25,4 +25,43 @@ letter-spacing: 0.25rem !important;
     cursor: pointer;
     color: var(--mainYellow);
     font-size: 2rem;
+}
+
+/* background cover style */
+
+.containerImg{
+    position: relative;
+}
+
+.default-background{
+    background-position: center;
+    background-size: cover;
+    filter: blur();
+}
+
+.hero-background{
+    position: absolute;
+    top: 1rem;
+  color: var(--mainWhite);
+
+} 
+
+
+/* home info */
+
+.btn-yellow{
+    color: var(--mainYellow) !important;
+    border-color:var(--mainYellow) !important;
+}
+
+.btn-yellow:hover{
+    background: var(--mainYellow);
+    color: var(--mainWhite) !important;
+}
+
+
+/* footer */
+
+.footer{
+    background: var(--mainBrown);
 }

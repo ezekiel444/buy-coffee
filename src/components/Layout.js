@@ -1,5 +1,6 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
+import Footer from './Globals/Footer'
 import Navbar from './Globals/Navbar'
 
 
@@ -10,6 +11,7 @@ return <>
 </Helmet>
 <Navbar/>
     {children}
+    <Footer/>
 </>
 }
 

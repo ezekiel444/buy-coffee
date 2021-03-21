@@ -3,18 +3,19 @@ import {Link,} from 'gatsby'
 import {FaCartArrowDown} from 'react-icons/fa'
 import logo from '../../images/NavIcon.jpg'
 
+
 const NavItems = {
     // NavCss:'collapse navbar-collapse',
     links:[
         {
             id:1,
             path:"/",
-            text:'home'
+            text:'Home'
         },
         {
-            id:1,
+            id:2,
             path:"/about",
-            text:'about'
+            text:'About'
         },
     ]
 }
