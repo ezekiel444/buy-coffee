@@ -1,3 +1,10 @@
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
+
+
+
 module.exports = {
   siteMetadata: {
     title: "coffee_seller",
@@ -14,6 +21,14 @@ module.exports = {
       },
       
     },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: process.env.SPACE_ID,
+        // Learn about environment variables: https://gatsby.dev/env-vars
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+      },
+    }
    
   ],
   
