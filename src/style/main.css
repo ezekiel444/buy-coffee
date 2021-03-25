@@ -65,3 +65,9 @@ letter-spacing: 0.25rem !important;
 .footer{
     background: var(--mainBrown);
 }
+
+/* menu */
+
+.menu{
+    background: var(--mainGrey);
+}

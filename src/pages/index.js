@@ -3,6 +3,7 @@ import {graphql}  from 'gatsby'
 import BackgrounCover from '../components/BackgrounCover'
 import Layout from '../components/Layout'
 import Info from '../components/Home/Info'
+import Menu from '../components/Home/Menu'
 
 const Index = ({data})=>{
    const {file:{childImageSharp:{fluid}}} = data
@@ -10,6 +11,7 @@ const Index = ({data})=>{
 return <Layout>
 <BackgrounCover image={fluid} title='A Drink with Matomi ☕' styleClass='default-background' />
 <Info/>
+<Menu data={data.contentful.nodes}/>
 </Layout>
 
 }
@@ -26,5 +28,22 @@ export const query = graphql`
         }
       }
     }
+
+   contentful:allContentfulCoffeeModel {
+    nodes {
+      id
+      category
+      price
+      title
+      description {
+        description
+      }
+      image {
+        fixed(height: 50, width: 50) {
+          ...GatsbyContentfulFixed
+        }
+      }
+    }
+  }
   }
 `
