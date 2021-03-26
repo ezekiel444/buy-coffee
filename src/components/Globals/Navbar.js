@@ -41,7 +41,7 @@ export default function Navbar() {
 <Link to={link.path} className='nav-link text-capitalized'> {link.text} </Link>
             </li>
         })}
-        <li className="nav-item ml-sm-5">
+        <li className="nav-item ml-sm-5 snipcart-checkout snipcart-items-count">
         <FaCartArrowDown className='cart-icon' />
         </li>
     </ul>

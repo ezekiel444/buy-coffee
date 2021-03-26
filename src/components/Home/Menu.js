@@ -18,7 +18,6 @@ export default function Menu({data}) {
 
 
 const handleFilter = (category)=>{
-    // let newCoffeeData = [...coffeeItem.temporayData]
   if( category === 'all' ){
  setCoffeeItem(prevItem=>{
   return {...prevItem, allData:data}

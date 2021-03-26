@@ -68,6 +68,6 @@ letter-spacing: 0.25rem !important;
 
 /* menu */
 
-.menu{
+.menu, .contact{
     background: var(--mainGrey);
 }

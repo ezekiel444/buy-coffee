@@ -4,6 +4,8 @@ import BackgrounCover from '../components/BackgrounCover'
 import Layout from '../components/Layout'
 import Info from '../components/Home/Info'
 import Menu from '../components/Home/Menu'
+import Products from '../components/Home/Products'
+import Contact from '../components/Home/Contact'
 
 const Index = ({data})=>{
    const {file:{childImageSharp:{fluid}}} = data
@@ -12,6 +14,8 @@ return <Layout>
 <BackgrounCover image={fluid} title='A Drink with Matomi ☕' styleClass='default-background' />
 <Info/>
 <Menu data={data.contentful.nodes}/>
+<Products/>
+<Contact/>
 </Layout>
 
 }
