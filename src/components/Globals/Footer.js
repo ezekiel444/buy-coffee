@@ -6,7 +6,9 @@ export default function Footer() {
             <div className="container">
                  <div className="row">
                     <div className="col-10 mx-auto col-md-6 text-yellow text-center text-capitalize">
-                        <h3>All rights reserved &copy;{new Date().getFullYear().toString()}</h3>
+
+                        <h3>All rights reserved &copy;{new Date().getFullYear().toString()}
+                        <span><a rel="noopener noreferrer" href="http://matomi.netlify.app">Matomi</a></span></h3>
                         </div> 
                  </div>
             </div>
