@@ -51,7 +51,7 @@ letter-spacing: 0.25rem !important;
 
 .btn-yellow{
     color: var(--mainYellow) !important;
-    border-color:var(--mainYellow) !important;
+border-color:var(--mainYellow) !important;
 }
 
 .btn-yellow:hover{
